@@ -1,0 +1,21 @@
+# Hasan Shousha — Portfolio
+
+Static portfolio site for GitHub Pages.
+
+## Structure
+- `index.html` — single-page portfolio
+- `assets/Hasan_Shousha_CV-AUG26.docx` — downloadable resume (replace with your latest)
+- Placeholders marked as "Example"/"placeholder" — replace with real content.
+
+## Publish
+1. Create repo `hsnbnjml.github.io` (or your chosen name) on GitHub.
+2. `git remote add origin https://github.com/hsnbnjml/hsnbnjml.github.io.git`
+3. `git push -u origin main`
+4. In repo settings, enable GitHub Pages (source: `main` / `/ (root)`).
+
+## Customize
+- Software cards: replace example projects with your repos.
+- NotebookLM cards: replace share links.
+- Postgrad cards: replace with your program/certs.
+- Translations PDF buttons: add PDFs in `assets/translations/` and update links (optional).
+PY

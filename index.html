@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasan Shousha — Portfolio</title>
+  <meta name="description" content="Portfolio of Hasan Shousha: university translations (EN↔AR), vibe-coded software, postgraduate learning, NotebookLM notebooks, and resume." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter','system-ui','sans-serif'], arabic: ['"Noto Sans Arabic"','Inter','sans-serif'] },
+          colors: {
+            brand: { 50:'#eff6ff',100:'#dbeafe',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',900:'#1e3a8a' },
+            slate2: { 950:'#0b1220' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background:#0b1220; color:#e5e7eb; }
+    .glass { background:rgba(255,255,255,.04); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,.08); }
+    .card { transition: transform .2s ease, border-color .2s ease; }
+    .card:hover { transform: translateY(-4px); border-color: rgba(59,130,246,.5); }
+    .gradient-text { background: linear-gradient(90deg,#60a5fa,#a78bfa,#f472b6); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .fade-in { animation: fadeIn 1s ease both; }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(10px);} to { opacity:1; transform:none;} }
+    .ar { font-family:'Noto Sans Arabic',Inter,sans-serif; direction:rtl; text-align:right; }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 backdrop-blur bg-slate2-950/70 border-b border-white/5">
+  <nav class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <a href="#top" class="font-bold text-lg">Hasan<span class="text-brand-500">.</span></a>
+    <div class="hidden md:flex gap-6 text-sm text-gray-300">
+      <a href="#translations" class="hover:text-white">Translations</a>
+      <a href="#software" class="hover:text-white">Software</a>
+      <a href="#postgrad" class="hover:text-white">Postgrad</a>
+      <a href="#notebooks" class="hover:text-white">Notebooks</a>
+      <a href="#resume" class="hover:text-white">Resume</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
+    </div>
+    <a href="#contact" class="text-sm bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-full">Get in touch</a>
+  </nav>
+</header>
+
+<main id="top" class="max-w-6xl mx-auto px-4">
+
+  <!-- HERO -->
+  <section class="py-24 text-center fade-in">
+    <div class="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-brand-500 to-purple-500 flex items-center justify-center text-3xl font-bold">HS</div>
+    <h1 class="text-5xl md:text-6xl font-extrabold">Hasan <span class="gradient-text">Shousha</span></h1>
+    <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Product &amp; operations professional. Translator (EN↔AR). Builder of small, useful software. Currently pursuing postgraduate study.</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <a href="#resume" class="bg-brand-600 hover:bg-brand-700 px-6 py-3 rounded-full font-medium">Download Resume</a>
+      <a href="https://www.linkedin.com/in/hasanshousha/" target="_blank" rel="noopener" class="glass px-6 py-3 rounded-full font-medium hover:bg-white/10">LinkedIn</a>
+      <a href="https://github.com/hsnbnjml" target="_blank" rel="noopener" class="glass px-6 py-3 rounded-full font-medium hover:bg-white/10">GitHub</a>
+    </div>
+    <p class="mt-6 text-xs text-gray-500">Placeholder copy — replace with your real tagline/bio.</p>
+  </section>
+
+  <!-- TRANSLATIONS -->
+  <section id="translations" class="py-16">
+    <div class="flex items-end justify-between mb-8">
+      <div>
+        <h2 class="text-3xl font-bold">University Translations</h2>
+        <p class="text-gray-400 mt-2">English ↔ Arabic poetry &amp; prose, done at university. Click to read the full side-by-side translation.</p>
+      </div>
+      <span class="text-xs glass px-3 py-1 rounded-full">11 pieces</span>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- items -->
+      <article class="card glass rounded-xl p-5">
+        <h3 class="ar text-lg font-semibold">ميلان كونديرا، اقتباس عن اللذة</h3>
+        <p class="text-sm text-gray-400 mt-1">Milan Kundera — a quote about Pleasure</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://app.affine.pro/workspace/51c97b58-03da-47cb-a418-e436a1d573b3/WVS05d-m1D" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open translation</a>
+          <button class="text-sm glass px-3 py-1.5 rounded opacity-60 cursor-not-allowed" title="Add PDF later">PDF</button>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-5">
+        <h3 class="ar text-lg font-semibold">منير عتيبة، في السرد التطبيقي، شَكيلان</h3>
+        <p class="text-sm text-gray-400 mt-1">Mounir Otaiba — Prose in-application, Shakilan</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://app.affine.pro/workspace/51c97b58-03da-47cb-a418-e436a1d573b3/TojbIhrfvu" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open translation</a>
+          <button class="text-sm glass px-3 py-1.5 rounded opacity-60 cursor-not-allowed" title="Add PDF later">PDF</button>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-5">
+        <h3 class="ar text-lg font-semibold">قضية الزنوج — ألبرت أينشتاين</h3>
+        <p class="text-sm text-gray-400 mt-1">Albert Einstein — Essays in Humanism</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://app.affine.pro/workspace/51c97b58-03da-47cb-a418-e436a1d573b3/m1Di0E7_sH" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open translation</a>
+          <button class="text-sm glass px-3 py-1.5 rounded opacity-60 cursor-not-allowed" title="Add PDF later">PDF</button>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-5">
+        <h3 class="ar text-lg font-semibold">توفيق الحكيم — تأملات في الفن والأدب</h3>
+        <p class="text-sm text-gray-400 mt-1">Tawfiq al-Hakim — Reflections on Art and Literature</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://app.affine.pro/workspace/51c97b58-03da-47cb-a418-e436a1d573b3/-s3SjrLlNR" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open translation</a>
+          <button class="text-sm glass px-3 py-1.5 rounded opacity-60 cursor-not-allowed" title="Add PDF later">PDF</button>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-5">
+        <h3 class="ar text-lg font-semibold">أبو تمام — شكوت</h3>
+        <p class="text-sm text-gray-400 mt-1">Abu Tammam — I complained</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://app.affine.pro/workspace/51c97b58-03da-47cb-a418-e436a1d573b3/2TSUeyBUK3" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open translation</a>
+          <button class="text-sm glass px-3 py-1.5 rounded opacity-60 cursor-not-allowed" title="Add PDF later">PDF</button>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-5">
+        <h3 class="text-lg font-semibold">Salah Jahin — In my pockets my hands</h3>
+        <p class="text-sm text-gray-400 mt-1 ar">صلاح جاهين — إيديا في جيوبي</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://app.affine.pro/workspace/51c97b58-03da-47cb-a418-e436a1d573b3/pbTcGyNenU" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open translation</a>
+          <button class="text-sm glass px-3 py-1.5 rounded opacity-60 cursor-not-allowed" title="Add PDF later">PDF</button>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-5">
+        <h3 class="text-lg font-semibold">George Orwell, 1984 — Winston Smith quote</h3>
+        <p class="text-sm text-gray-400 mt-1 ar">جورج أورويل — اقتباس لوينستون سميث</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://app.affine.pro/workspace/51c97b58-03da-47cb-a418-e436a1d573b3/th2YwTZ6XF" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open translation</a>
+          <button class="text-sm glass px-3 py-1.5 rounded opacity-60 cursor-not-allowed" title="Add PDF later">PDF</button>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-5">
+        <h3 class="text-lg font-semibold">Friedrich Nietzsche — To The Unknown God</h3>
+        <p class="text-sm text-gray-400 mt-1 ar">فريدريك نيتشه — إلى الإله المجهول</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://app.affine.pro/workspace/51c97b58-03da-47cb-a418-e436a1d573b3/4r8w-pJtq2" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open translation</a>
+          <button class="text-sm glass px-3 py-1.5 rounded opacity-60 cursor-not-allowed" title="Add PDF later">PDF</button>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-5">
+        <h3 class="text-lg font-semibold">Elia Abu Madi — O, complainer with excellent health</h3>
+        <p class="text-sm text-gray-400 mt-1 ar">إيليا أبو ماضي — أيها الشاكي وما بك داء</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://app.affine.pro/workspace/51c97b58-03da-47cb-a418-e436a1d573b3/1InazddJ8k" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open translation</a>
+          <button class="text-sm glass px-3 py-1.5 rounded opacity-60 cursor-not-allowed" title="Add PDF later">PDF</button>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-5">
+        <h3 class="text-lg font-semibold">Abu al-‘Ala’ al-Ma’arri — three-stage</h3>
+        <p class="text-sm text-gray-400 mt-1 ar">أبو العلاء المعري — ثلاثةُ أيامٍ</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://app.affine.pro/workspace/51c97b58-03da-47cb-a418-e436a1d573b3/Wh4FKs1q8u" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open translation</a>
+          <button class="text-sm glass px-3 py-1.5 rounded opacity-60 cursor-not-allowed" title="Add PDF later">PDF</button>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-5">
+        <h3 class="text-lg font-semibold">Abu al-‘Ala’ al-Ma’arri — Existence is solid</h3>
+        <p class="text-sm text-gray-400 mt-1 ar">أبو العلاء المعري — أمّا المكانُ، فثابتٌ لا ينطوي</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://app.affine.pro/workspace/51c97b58-03da-47cb-a418-e436a1d573b3/338eT1DW1s" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open translation</a>
+          <button class="text-sm glass px-3 py-1.5 rounded opacity-60 cursor-not-allowed" title="Add PDF later">PDF</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SOFTWARE -->
+  <section id="software" class="py-16">
+    <h2 class="text-3xl font-bold">Personal Software</h2>
+    <p class="text-gray-400 mt-2 mb-8">Vibe-coded projects. Replace placeholders with your real repos.</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <article class="card glass rounded-xl p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Example Project A</h3>
+          <span class="text-xs glass px-2 py-0.5 rounded">Example</span>
+        </div>
+        <p class="text-sm text-gray-400 mt-2">Short description of what this project does and why it exists. Replace with real copy.</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="text-xs glass px-2 py-1 rounded">React</span>
+          <span class="text-xs glass px-2 py-1 rounded">TypeScript</span>
+          <span class="text-xs glass px-2 py-1 rounded">Tailwind</span>
+        </div>
+        <div class="mt-4 flex gap-2">
+          <a href="https://github.com/hsnbnjml" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">GitHub</a>
+          <a href="#" class="text-sm glass px-3 py-1.5 rounded">Live demo</a>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Example Project B</h3>
+          <span class="text-xs glass px-2 py-0.5 rounded">Example</span>
+        </div>
+        <p class="text-sm text-gray-400 mt-2">Short description. A CLI tool that automates something tedious.</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="text-xs glass px-2 py-1 rounded">Python</span>
+          <span class="text-xs glass px-2 py-1 rounded">CLI</span>
+        </div>
+        <div class="mt-4 flex gap-2">
+          <a href="https://github.com/hsnbnjml" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">GitHub</a>
+          <a href="#" class="text-sm glass px-3 py-1.5 rounded">Docs</a>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Example Project C</h3>
+          <span class="text-xs glass px-2 py-0.5 rounded">Example</span>
+        </div>
+        <p class="text-sm text-gray-400 mt-2">A small web app / experiment. Link your vibe-coded repo here.</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="text-xs glass px-2 py-1 rounded">HTML</span>
+          <span class="text-xs glass px-2 py-1 rounded">JS</span>
+        </div>
+        <div class="mt-4 flex gap-2">
+          <a href="https://github.com/hsnbnjml" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">GitHub</a>
+          <a href="#" class="text-sm glass px-3 py-1.5 rounded">Live demo</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- POSTGRAD -->
+  <section id="postgrad" class="py-16">
+    <h2 class="text-3xl font-bold">Postgraduate Learning</h2>
+    <p class="text-gray-400 mt-2 mb-8">Courses, certifications and reading I’m working through.</p>
+    <div class="space-y-4">
+      <div class="glass rounded-xl p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <h3 class="font-semibold">Degree / Program name (placeholder)</h3>
+          <p class="text-sm text-gray-400">University · Expected completion: 2027 · Focus on …</p>
+        </div>
+        <span class="text-xs glass px-3 py-1 rounded-full self-start">In progress</span>
+      </div>
+      <div class="glass rounded-xl p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <h3 class="font-semibold">Certification (placeholder)</h3>
+          <p class="text-sm text-gray-400">Issuing org · 2026</p>
+        </div>
+        <a href="#" class="text-sm glass px-3 py-1.5 rounded self-start hover:bg-white/10">Credential</a>
+      </div>
+      <div class="glass rounded-xl p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <h3 class="font-semibold">Reading list / learning notes (placeholder)</h3>
+          <p class="text-sm text-gray-400">Books, papers and links I’m studying.</p>
+        </div>
+        <a href="#" class="text-sm glass px-3 py-1.5 rounded self-start hover:bg-white/10">Notes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTEBOOKS -->
+  <section id="notebooks" class="py-16">
+    <h2 class="text-3xl font-bold">NotebookLM Notebooks</h2>
+    <p class="text-gray-400 mt-2 mb-8">Interactive notebooks. Open in NotebookLM to explore.</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <article class="card glass rounded-xl p-6">
+        <h3 class="text-lg font-semibold">Notebook: Topic A (placeholder)</h3>
+        <p class="text-sm text-gray-400 mt-2">Summary of sources and the questions this notebook answers.</p>
+        <div class="mt-4">
+          <a href="https://notebooklm.google.com" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open in NotebookLM</a>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-6">
+        <h3 class="text-lg font-semibold">Notebook: Topic B (placeholder)</h3>
+        <p class="text-sm text-gray-400 mt-2">Example: research notes, curated sources, generated summaries.</p>
+        <div class="mt-4">
+          <a href="https://notebooklm.google.com" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open in NotebookLM</a>
+        </div>
+      </article>
+      <article class="card glass rounded-xl p-6">
+        <h3 class="text-lg font-semibold">Notebook: Topic C (placeholder)</h3>
+        <p class="text-sm text-gray-400 mt-2">Drop your NotebookLM share links here.</p>
+        <div class="mt-4">
+          <a href="https://notebooklm.google.com" target="_blank" rel="noopener" class="text-sm bg-brand-600 hover:bg-brand-700 px-3 py-1.5 rounded">Open in NotebookLM</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="py-16">
+    <h2 class="text-3xl font-bold">Resume</h2>
+    <p class="text-gray-400 mt-2 mb-6">Download or preview. Replace the file in <code class="text-brand-500">assets/</code> with your latest CV.</p>
+    <div class="glass rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <h3 class="font-semibold">Hasan_Shousha_CV (DOCX)</h3>
+        <p class="text-sm text-gray-400">Microsoft Word format. Click to download.</p>
+      </div>
+      <div class="flex gap-3">
+        <a href="assets/Hasan_Shousha_CV-AUG26.docx" download class="bg-brand-600 hover:bg-brand-700 px-5 py-2.5 rounded-full font-medium">Download CV</a>
+        <a href="https://docs.google.com/viewer?url=" class="glass px-5 py-2.5 rounded-full font-medium hover:bg-white/10">Preview (add URL)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16">
+    <h2 class="text-3xl font-bold">Contact</h2>
+    <p class="text-gray-400 mt-2 mb-6">Let’s connect.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="https://www.linkedin.com/in/hasanshousha/" target="_blank" rel="noopener" class="card glass rounded-xl p-5 hover:bg-white/5">
+        <div class="text-sm text-gray-400">LinkedIn</div>
+        <div class="font-semibold mt-1">hasanshousha</div>
+      </a>
+      <a href="https://github.com/hsnbnjml" target="_blank" rel="noopener" class="card glass rounded-xl p-5 hover:bg-white/5">
+        <div class="text-sm text-gray-400">GitHub</div>
+        <div class="font-semibold mt-1">hsnbnjml</div>
+      </a>
+      <a href="mailto:hello@example.com" class="card glass rounded-xl p-5 hover:bg-white/5">
+        <div class="text-sm text-gray-400">Email</div>
+        <div class="font-semibold mt-1">hello@example.com (placeholder)</div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-white/5 mt-16">
+  <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-2">
+    <div>© <span id="y"></span> Hasan Shousha. Built with Tailwind.</div>
+    <div>Made for GitHub Pages.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
