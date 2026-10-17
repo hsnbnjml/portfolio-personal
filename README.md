@@ -4,7 +4,7 @@ Static portfolio site for GitHub Pages.
 
 ## Structure
 - `index.html` — single-page portfolio
-- `assets/Hasan_Shousha_CV-AUG26.docx` — downloadable resume (replace with your latest)
+- `assets/Hasan_Shousha_CV-OCT26.docx` — downloadable resume (replace with your latest)
 - Placeholders marked as "Example"/"placeholder" — replace with real content.
 
 ## Publish
