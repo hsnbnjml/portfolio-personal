@@ -8,10 +8,7 @@ Static portfolio site for GitHub Pages.
 - Placeholders marked as "Example"/"placeholder" — replace with real content.
 
 ## Publish
-1. Create repo `hsnbnjml.github.io` (or your chosen name) on GitHub.
-2. `git remote add origin https://github.com/hsnbnjml/hsnbnjml.github.io.git`
-3. `git push -u origin main`
-4. In repo settings, enable GitHub Pages (source: `main` / `/ (root)`).
+Hosted at https://hsnbnjml.github.io/portfolio-personal/ via GitHub Pages (repo: `portfolio-personal`, watching `main`).
 
 ## Customize
 - Software cards: replace example projects with your repos.
